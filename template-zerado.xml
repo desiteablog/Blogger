@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' expr:dir='data:blog.locale.languageDirection' expr:lang='data:blog.locale.language' prefix='og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!-- Tema Zerado v1.0.0  -->
+<head>
+
+<!-- Titulo -->
+<title><data:view.title.escaped/></title>
+
+<!-- Meta data -->
+<b:include data='blog' name='all-head-content'/>
+
+<!-- Meta data: twitter -->
+<b:if cond='data:view.featuredImage'>
+<meta content='summary_large_image' property='twitter:card'/>
+<meta expr:content='data:view.url.canonical' property='twitter:url'/>
+<meta expr:content='data:view.title' property='twitter:title'/>
+<meta expr:content='data:view.description' property='twitter:description'/>
+<meta expr:content='resizeImage(data:view.featuredImage, &quot;500&quot;, &quot;500:400&quot;)' property='twitter:image'/>
+</b:if>
+
+<!-- Meta data: Viewport -->
+<meta content='width=device-width, initial-scale=1' name='viewport'/> 
+ 
+<b:skin><![CDATA[/*
+  -----------------------------------------------
+  Nome do Tema:      Tema Zerado
+  Descrição do Tema: Um modelo em branco para construir um template para o Blogger
+  URI do Tema:       https://desiteablogger.blogspot.com
+  Autor:             Leonardo Oro
+  Versão:            1.0.0
+  Licenciado sob a Licença MIT
+  ----------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+]]></b:skin>
+</head>
+<body>
+<b:section class='section' id='section'/>
+&lt;textarea id=&quot;bjs&quot; readonly hidden&gt;
+</body>
+&lt;/textarea&gt;
+<script>document.getElementById(&#39;bjs&#39;).remove()</script>&lt;/body&gt;
+</html>
